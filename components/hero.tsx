@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Github, Linkedin, Twitter, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, FileText } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
@@ -9,52 +10,68 @@ export function Hero() {
           {/* Left Column */}
           <div className="space-y-8">
             <div>
+              <p className="text-primary font-medium mb-2">Hi, my name is</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
                 Your Name
               </h1>
-              <p className="text-xl md:text-2xl text-primary mt-2 font-medium">
-                Full Stack Developer
+              <p className="text-xl md:text-2xl text-muted-foreground mt-3 font-medium">
+                Computer Science Student
               </p>
             </div>
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
-              I build accessible, pixel-perfect digital experiences for the web.
+              Passionate about building scalable systems and crafting elegant solutions to complex problems. Currently focused on <span className="text-foreground">full-stack development</span> and <span className="text-foreground">machine learning</span>.
             </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4 pt-2">
+              <Button asChild>
+                <Link href="/resume.pdf" target="_blank">
+                  <FileText className="w-4 h-4 mr-2" />
+                  Download Resume
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="#contact">
+                  Get in Touch
+                </Link>
+              </Button>
+            </div>
 
             {/* Navigation */}
             <nav className="flex flex-col gap-4 pt-4">
               <NavLink href="#about" label="ABOUT" />
+              <NavLink href="#skills" label="SKILLS" />
               <NavLink href="#projects" label="PROJECTS" />
               <NavLink href="#contact" label="CONTACT" />
             </nav>
 
             {/* Social Links */}
-            <div className="flex items-center gap-5 pt-8">
-              <SocialLink href="https://github.com" icon={<Github className="w-5 h-5" />} label="GitHub" />
-              <SocialLink href="https://linkedin.com" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
-              <SocialLink href="https://twitter.com" icon={<Twitter className="w-5 h-5" />} label="Twitter" />
+            <div className="flex items-center gap-5 pt-4">
+              <SocialLink href="https://github.com/yourname" icon={<Github className="w-5 h-5" />} label="GitHub" />
+              <SocialLink href="https://linkedin.com/in/yourname" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
               <SocialLink href="mailto:hello@example.com" icon={<Mail className="w-5 h-5" />} label="Email" />
             </div>
           </div>
 
           {/* Right Column - About Content */}
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <div id="about" className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              {"I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability."}
+              {"I'm a computer science student passionate about building software that makes a difference. My journey in tech started with simple scripts and has evolved into creating full-stack applications, exploring machine learning models, and contributing to open-source projects."}
             </p>
             <p>
-              {"In the past, I've had the opportunity to develop software across a variety of settings — from "}
-              <span className="text-foreground font-medium">advertising agencies</span>
-              {" and "}
-              <span className="text-foreground font-medium">large corporations</span>
-              {" to "}
-              <span className="text-foreground font-medium">start-ups</span>
-              {" and "}
-              <span className="text-foreground font-medium">small digital product studios</span>
+              {"Currently, I'm pursuing my degree at "}
+              <span className="text-foreground font-medium">University Name</span>
+              {" where I'm deepening my knowledge in "}
+              <span className="text-foreground font-medium">algorithms</span>
+              {", "}
+              <span className="text-foreground font-medium">distributed systems</span>
+              {", and "}
+              <span className="text-foreground font-medium">artificial intelligence</span>
               {"."}
             </p>
             <p>
-              {"In my spare time, I'm usually exploring new technologies, contributing to open source, reading, or playing video games."}
+              {"I've interned at companies where I worked on production systems, collaborated with cross-functional teams, and shipped features used by thousands of users. I'm always eager to learn, whether it's a new framework, language, or paradigm."}
             </p>
           </div>
         </div>

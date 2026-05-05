@@ -7,51 +7,57 @@ import { cn } from "@/lib/utils"
 
 const projects = [
   {
-    title: "Project Alpha",
-    description: "A full-stack web application built with Next.js and PostgreSQL. Features real-time collaboration, authentication, and a beautiful dashboard interface.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    title: "ML Stock Predictor",
+    description: "Built a machine learning pipeline using Python and TensorFlow to predict stock price movements. Implemented LSTM networks achieving 68% directional accuracy. Deployed as a REST API with FastAPI.",
+    role: "Solo Developer",
+    tags: ["Python", "TensorFlow", "FastAPI", "Pandas"],
     link: "#",
-    github: "#",
+    github: "https://github.com/yourname/stock-predictor",
     featured: true,
   },
   {
-    title: "Design System",
-    description: "A comprehensive design system with 50+ components, detailed documentation, and Figma integration for seamless designer-developer handoff.",
-    tags: ["React", "Storybook", "Figma", "CSS-in-JS"],
+    title: "Campus Event Hub",
+    description: "Full-stack web app for university event management serving 2,000+ students. Features real-time notifications, OAuth authentication, and an admin dashboard for event organizers.",
+    role: "Lead Developer",
+    tags: ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
     link: "#",
-    github: "#",
+    github: "https://github.com/yourname/event-hub",
     featured: true,
   },
   {
-    title: "CLI Tool",
-    description: "A command-line interface tool that automates common development workflows, reducing setup time by 80%.",
-    tags: ["Node.js", "TypeScript", "CLI"],
+    title: "Distributed File System",
+    description: "Implemented a simplified distributed file system in C++ supporting file replication, fault tolerance, and consistent hashing for a distributed systems course project.",
+    role: "Team Lead (3 members)",
+    tags: ["C++", "gRPC", "Docker"],
     link: "#",
-    github: "#",
+    github: "https://github.com/yourname/dfs",
     featured: false,
   },
   {
-    title: "Mobile App",
-    description: "Cross-platform mobile application for task management with offline support and cloud sync capabilities.",
-    tags: ["React Native", "Firebase", "Redux"],
+    title: "Code Review Bot",
+    description: "GitHub bot that automatically reviews pull requests using GPT-4 API, providing suggestions for code quality, security vulnerabilities, and best practices.",
+    role: "Solo Developer",
+    tags: ["Node.js", "OpenAI API", "GitHub Actions"],
     link: "#",
-    github: "#",
+    github: "https://github.com/yourname/review-bot",
     featured: false,
   },
   {
-    title: "API Gateway",
-    description: "High-performance API gateway handling 10K+ requests per second with built-in rate limiting and caching.",
-    tags: ["Go", "Redis", "Docker", "Kubernetes"],
+    title: "Algorithm Visualizer",
+    description: "Interactive web app visualizing 15+ sorting and graph algorithms with step-by-step animations. Used by 500+ students in introductory CS courses.",
+    role: "Solo Developer",
+    tags: ["React", "D3.js", "TypeScript"],
     link: "#",
-    github: "#",
+    github: "https://github.com/yourname/algo-viz",
     featured: false,
   },
   {
-    title: "Analytics Dashboard",
-    description: "Real-time analytics dashboard with interactive charts, custom reports, and data export functionality.",
-    tags: ["Vue.js", "D3.js", "Python", "FastAPI"],
+    title: "IoT Weather Station",
+    description: "Raspberry Pi-based weather monitoring system with real-time data collection, cloud storage, and a mobile-friendly dashboard displaying historical trends.",
+    role: "Hardware & Software",
+    tags: ["Python", "Raspberry Pi", "InfluxDB", "Grafana"],
     link: "#",
-    github: "#",
+    github: "https://github.com/yourname/weather-station",
     featured: false,
   },
 ]
@@ -106,6 +112,7 @@ export function Projects() {
 interface Project {
   title: string
   description: string
+  role: string
   tags: string[]
   link: string
   github: string
@@ -154,6 +161,7 @@ function FeaturedProjectCard({
         </div>
       </div>
 
+      <p className="text-xs font-medium text-primary mb-2">{project.role}</p>
       <p className="text-muted-foreground text-sm leading-relaxed mb-4">
         {project.description}
       </p>
