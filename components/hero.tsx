@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Github, Linkedin, Mail, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -6,9 +7,22 @@ export function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20">
       <div className="max-w-6xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Column */}
           <div className="space-y-6">
+            {/* Profile Image - Mobile */}
+            <div className="lg:hidden flex justify-center mb-6">
+              <div className="relative w-48 h-48 rounded-full overflow-hidden ring-4 ring-primary/20">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Abhi Thiagarajan"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </div>
+            
             <div>
               <p className="text-primary font-medium mb-2">Hi, my name is</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
@@ -54,23 +68,39 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right Column - About Content */}
-          <div id="about" className="space-y-5 text-muted-foreground leading-relaxed">
-            <p>
-              {"I'm a Biomedical Engineering student at "}
-              <span className="text-foreground font-medium">UT Austin</span>
-              {" with a minor in Programming and Computation, maintaining a perfect 4.0 GPA. I love building software that bridges the gap between complex technical systems and real-world impact."}
-            </p>
-            <p>
-              {"My experience spans research and industry. At "}
-              <span className="text-foreground font-medium">Wolfram</span>
-              {", I engineered distributed backend systems across 250K+ nodes. At "}
-              <span className="text-foreground font-medium">UT Dallas Research</span>
-              {", I built ML pipelines and boosted system performance by 18% through GPU optimization."}
-            </p>
-            <p>
-              {"When I'm not coding, you'll find me watching F1, exploring national parks, hunting for the best food trucks, or playing volleyball."}
-            </p>
+          {/* Right Column - Profile Image & About */}
+          <div className="space-y-8">
+            {/* Profile Image - Desktop */}
+            <div className="hidden lg:flex justify-center">
+              <div className="relative w-72 h-72 rounded-2xl overflow-hidden ring-4 ring-primary/20 shadow-xl">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Abhi Thiagarajan"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </div>
+            
+            {/* About Content */}
+            <div id="about" className="space-y-5 text-muted-foreground leading-relaxed">
+              <p>
+                {"I'm a Biomedical Engineering student at "}
+                <span className="text-foreground font-medium">UT Austin</span>
+                {" with a minor in Programming and Computation, maintaining a perfect 4.0 GPA. I love building software that bridges the gap between complex technical systems and real-world impact."}
+              </p>
+              <p>
+                {"My experience spans research and industry. At "}
+                <span className="text-foreground font-medium">Wolfram</span>
+                {", I engineered distributed backend systems across 250K+ nodes. At "}
+                <span className="text-foreground font-medium">UT Dallas Research</span>
+                {", I built ML pipelines and boosted system performance by 18% through GPU optimization."}
+              </p>
+              <p>
+                {"When I'm not coding, you'll find me watching F1, exploring national parks, hunting for the best food trucks, or playing volleyball."}
+              </p>
+            </div>
           </div>
         </div>
       </div>
