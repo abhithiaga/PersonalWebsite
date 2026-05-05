@@ -30,7 +30,7 @@ const projects = [
     role: "Full-Stack Developer",
     tags: ["Python", "Dash", "AWS", "LLM APIs"],
     link: "#",
-    github: "#",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
@@ -153,12 +153,12 @@ function FeaturedProjectCard({
           {project.title}
         </h3>
         <Link
-            href={project.github}
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label={`View ${project.title} on GitHub`}
-          >
-            <Github className="w-5 h-5" />
-          </Link>
+          href={project.github}
+          className="text-muted-foreground hover:text-foreground transition-colors"
+          aria-label={`View ${project.title} on GitHub`}
+        >
+          <Github className="w-5 h-5" />
+        </Link>
       </div>
 
       <p className="text-xs font-medium text-primary mb-2">{project.role}</p>
