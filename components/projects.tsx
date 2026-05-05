@@ -47,7 +47,7 @@ const projects = [
     description: "Engineered distributed backend systems across 250K+ nodes using GPU acceleration and parallel processing, cutting runtime by 42%.",
     role: "Research Intern",
     tags: ["Wolfram", "Python", "GPU", "Parallel Computing"],
-    link: "#",
+    link: "https://community.wolfram.com/groups/-/m/t/3216394",
     github: "#",
     featured: false,
   },
