@@ -7,6 +7,15 @@ import { cn } from "@/lib/utils"
 
 const projects = [
   {
+    title: "UT Sublease",
+    description: "Building a mobile-first subleasing platform for UT Austin students to easily find and post short-term housing. Features include verified student profiles, in-app messaging, and neighborhood-based search.",
+    role: "In Progress",
+    tags: ["React Native", "Next.js", "Supabase", "Mobile"],
+    link: "#",
+    github: "#",
+    featured: true,
+  },
+  {
     title: "AI Cardiovascular Diagnostics",
     description: "Built a full-stack platform with FastAPI backend and Plotly/Dash frontend for real-time ECG analysis and risk prediction. Deployed on AWS Lambda, reducing model inference latency by 37% and cutting diagnostic review time by 30%.",
     role: "Full-Stack Developer",
