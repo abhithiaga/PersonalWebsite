@@ -8,27 +8,27 @@ export function Hero() {
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Column */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
               <p className="text-primary font-medium mb-2">Hi, my name is</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-                Your Name
+                Abhi Thiagarajan
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mt-3 font-medium">
-                Computer Science Student
+                Biomedical Engineering + CS
               </p>
             </div>
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
-              Passionate about building scalable systems and crafting elegant solutions to complex problems. Currently focused on <span className="text-foreground">full-stack development</span> and <span className="text-foreground">machine learning</span>.
+              Building at the intersection of <span className="text-foreground font-medium">healthcare</span> and <span className="text-foreground font-medium">technology</span>. Passionate about full-stack development, ML systems, and creating software that makes a real impact.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap gap-3">
               <Button asChild>
                 <Link href="/resume.pdf" target="_blank">
                   <FileText className="w-4 h-4 mr-2" />
-                  Download Resume
+                  Resume
                 </Link>
               </Button>
               <Button variant="outline" asChild>
@@ -39,7 +39,7 @@ export function Hero() {
             </div>
 
             {/* Navigation */}
-            <nav className="flex flex-col gap-4 pt-4">
+            <nav className="flex flex-col gap-3 pt-4">
               <NavLink href="#about" label="ABOUT" />
               <NavLink href="#skills" label="SKILLS" />
               <NavLink href="#projects" label="PROJECTS" />
@@ -47,31 +47,29 @@ export function Hero() {
             </nav>
 
             {/* Social Links */}
-            <div className="flex items-center gap-5 pt-4">
-              <SocialLink href="https://github.com/yourname" icon={<Github className="w-5 h-5" />} label="GitHub" />
-              <SocialLink href="https://linkedin.com/in/yourname" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
-              <SocialLink href="mailto:hello@example.com" icon={<Mail className="w-5 h-5" />} label="Email" />
+            <div className="flex items-center gap-5 pt-2">
+              <SocialLink href="https://github.com/AbhiThiagarajan" icon={<Github className="w-5 h-5" />} label="GitHub" />
+              <SocialLink href="https://linkedin.com/in/AbhiThiagarajan" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
+              <SocialLink href="mailto:abhi.thiaga@utexas.edu" icon={<Mail className="w-5 h-5" />} label="Email" />
             </div>
           </div>
 
           {/* Right Column - About Content */}
-          <div id="about" className="space-y-6 text-muted-foreground leading-relaxed">
+          <div id="about" className="space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              {"I'm a computer science student passionate about building software that makes a difference. My journey in tech started with simple scripts and has evolved into creating full-stack applications, exploring machine learning models, and contributing to open-source projects."}
+              {"I'm a Biomedical Engineering student at "}
+              <span className="text-foreground font-medium">UT Austin</span>
+              {" with a minor in Programming and Computation, maintaining a perfect 4.0 GPA. I love building software that bridges the gap between complex technical systems and real-world impact."}
             </p>
             <p>
-              {"Currently, I'm pursuing my degree at "}
-              <span className="text-foreground font-medium">University Name</span>
-              {" where I'm deepening my knowledge in "}
-              <span className="text-foreground font-medium">algorithms</span>
-              {", "}
-              <span className="text-foreground font-medium">distributed systems</span>
-              {", and "}
-              <span className="text-foreground font-medium">artificial intelligence</span>
-              {"."}
+              {"My experience spans research and industry. At "}
+              <span className="text-foreground font-medium">Wolfram</span>
+              {", I engineered distributed backend systems across 250K+ nodes. At "}
+              <span className="text-foreground font-medium">UT Dallas Research</span>
+              {", I built ML pipelines and boosted system performance by 18% through GPU optimization."}
             </p>
             <p>
-              {"I've interned at companies where I worked on production systems, collaborated with cross-functional teams, and shipped features used by thousands of users. I'm always eager to learn, whether it's a new framework, language, or paradigm."}
+              {"When I'm not coding, you'll find me watching F1, exploring national parks, hunting for the best food trucks, or playing volleyball."}
             </p>
           </div>
         </div>

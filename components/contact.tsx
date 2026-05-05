@@ -25,23 +25,18 @@ export function Contact() {
           <div className="space-y-6">
             <ContactLink
               label="Email"
-              value="hello@example.com"
-              href="mailto:hello@example.com"
+              value="abhi.thiaga@utexas.edu"
+              href="mailto:abhi.thiaga@utexas.edu"
             />
             <ContactLink
               label="LinkedIn"
-              value="linkedin.com/in/yourname"
-              href="https://linkedin.com/in/yourname"
+              value="linkedin.com/in/AbhiThiagarajan"
+              href="https://linkedin.com/in/AbhiThiagarajan"
             />
             <ContactLink
-              label="GitHub"
-              value="github.com/yourname"
-              href="https://github.com/yourname"
-            />
-            <ContactLink
-              label="Twitter"
-              value="@yourhandle"
-              href="https://twitter.com/yourhandle"
+              label="Phone"
+              value="(972) 859-9048"
+              href="tel:+19728599048"
             />
           </div>
         </div>

@@ -1,23 +1,23 @@
 const skillCategories = [
   {
     name: "Languages",
-    skills: ["Python", "TypeScript", "JavaScript", "Java", "C++", "SQL"],
+    skills: ["Python", "Java", "SQL", "C++", "JavaScript", "HTML/CSS", "Wolfram"],
   },
   {
-    name: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "HTML/CSS", "Redux"],
+    name: "ML & Data",
+    skills: ["TensorFlow", "Scikit-learn", "NumPy", "Pandas", "Plotly", "Dash"],
   },
   {
-    name: "Backend",
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL"],
+    name: "Backend & APIs",
+    skills: ["FastAPI", "Flask", "REST APIs", "ETL Pipelines", "Power BI"],
   },
   {
-    name: "Tools & Platforms",
-    skills: ["Git", "Docker", "AWS", "Linux", "Vercel", "Figma"],
+    name: "Cloud & Tools",
+    skills: ["AWS", "Azure", "Git", "Docker", "Linux", "Wolfram Cloud"],
   },
   {
-    name: "Concepts",
-    skills: ["Data Structures", "Algorithms", "System Design", "CI/CD", "Agile"],
+    name: "Certifications",
+    skills: ["AWS CCP", "Azure Fundamentals", "Power BI"],
   },
 ]
 
