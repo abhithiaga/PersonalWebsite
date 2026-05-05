@@ -61,7 +61,7 @@ export function Hero() {
 
             {/* Social Links */}
             <div className="flex items-center gap-5 pt-2">
-              <SocialLink href="https://github.com/AbhiThiagarajan" icon={<Github className="w-5 h-5" />} label="GitHub" />
+              <SocialLink href="https://github.com/abhithiaga" icon={<Github className="w-5 h-5" />} label="GitHub" />
               <SocialLink href="https://linkedin.com/in/AbhiThiagarajan" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
               <SocialLink href="mailto:abhi.thiaga@utexas.edu" icon={<Mail className="w-5 h-5" />} label="Email" />
             </div>
