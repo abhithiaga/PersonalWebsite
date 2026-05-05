@@ -24,7 +24,6 @@ export function Hero() {
             </div>
 
             <div>
-              <p className="text-primary font-medium mb-2">Hi, my name is</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
                 Abhi Thiagarajan
               </h1>
@@ -40,7 +39,7 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
               <Button asChild>
-                <Link href="file:///C:/Users/abhit/Downloads/Abhirami%20Thiagarajan%20Resume.pdf" target="_blank">
+                <Link href="/resume.pdf" target="_blank">
                   <FileText className="w-4 h-4 mr-2" />
                   Resume
                 </Link>
