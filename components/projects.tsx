@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react"
+import { Github, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
@@ -30,11 +30,11 @@ const projects = [
     role: "Full-Stack Developer",
     tags: ["Python", "Dash", "AWS", "LLM APIs"],
     link: "#",
-    github: "#",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
-    title: "UTD Research Pipeline",
+    title: "University of Texas at Dallas – High-Throughput Biomedical Image Processing Pipeline",
     description: "Built Python-based backend services for high-volume image/video processing with modular APIs and batch-processing tools. Increased system performance by 18% through GPU acceleration.",
     role: "Research Intern",
     tags: ["Python", "TensorFlow", "NumPy", "FastAPI"],
@@ -43,7 +43,7 @@ const projects = [
     featured: false,
   },
   {
-    title: "Wolfram Distributed Systems",
+    title: "Wolfram (Boston, MA) – Large-Scale GPU-Accelerated Distributed Computing Systems",
     description: "Engineered distributed backend systems across 250K+ nodes using GPU acceleration and parallel processing, cutting runtime by 42%.",
     role: "Research Intern",
     tags: ["Wolfram", "Python", "GPU", "Parallel Computing"],
@@ -52,7 +52,7 @@ const projects = [
     featured: false,
   },
   {
-    title: "Data Engineering ETL",
+    title: "360DigiTMG (Dallas, TX) – Scalable ETL & Data Engineering Systems",
     description: "Built scalable Python/SQL APIs and ETL pipelines for 50K+ records. Developed dashboards with Plotly, Dash, and Power BI, reducing manual workflow by 40%.",
     role: "Full-Stack Intern",
     tags: ["Python", "SQL", "Power BI", "Flask"],
@@ -61,7 +61,7 @@ const projects = [
     featured: false,
   },
   {
-    title: "ML Diagnostic Imaging",
+    title: "AI Medical Imaging & Diagnostic Systems (Healthcare Applications)",
     description: "WWT Hackathon winning solution. Built an ML-powered diagnostic imaging tool for healthcare applications.",
     role: "Hackathon Winner",
     tags: ["Python", "TensorFlow", "Healthcare", "ML"],
@@ -152,22 +152,13 @@ function FeaturedProjectCard({
         <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
           {project.title}
         </h3>
-        <div className="flex items-center gap-3">
-          <Link
-            href={project.github}
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label={`View ${project.title} on GitHub`}
-          >
-            <Github className="w-5 h-5" />
-          </Link>
-          <Link
-            href={project.link}
-            className="text-muted-foreground hover:text-foreground transition-colors"
-            aria-label={`Visit ${project.title}`}
-          >
-            <ExternalLink className="w-5 h-5" />
-          </Link>
-        </div>
+        <Link
+          href={project.github}
+          className="text-muted-foreground hover:text-foreground transition-colors"
+          aria-label={`View ${project.title} on GitHub`}
+        >
+          <Github className="w-5 h-5" />
+        </Link>
       </div>
 
       <p className="text-xs font-medium text-primary mb-2">{project.role}</p>
@@ -202,7 +193,7 @@ function ProjectRow({
 }) {
   return (
     <Link
-      href={project.link}
+      href={project.github}
       className={cn(
         "group flex items-center justify-between py-4 px-4 -mx-4 rounded-lg transition-all duration-200",
         isHovered && "bg-secondary/50"
