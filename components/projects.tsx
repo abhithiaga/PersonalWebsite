@@ -12,7 +12,7 @@ const projects = [
     role: "In Progress",
     tags: ["React Native", "Next.js", "Supabase", "Mobile"],
     link: "#",
-    github: "https://github.com/abhithiaga/CarbonAI",
+    github: "https://github.com/abhithiaga/SubLeaseU",
     featured: true,
   },
   {
