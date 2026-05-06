@@ -90,11 +90,7 @@ export function Hero() {
                 {" with a minor in Programming and Computation, maintaining a perfect 4.0 GPA. I love building software that bridges the gap between complex technical systems and real-world impact."}
               </p>
               <p>
-                {"My experience spans research and industry. At "}
-                <span className="text-foreground font-medium">Wolfram</span>
-                {", I engineered distributed backend systems across 250K+ nodes. At "}
-                <span className="text-foreground font-medium">UT Dallas Research</span>
-                {", I built ML pipelines and boosted system performance by 18% through GPU optimization."}
+                {"I’ve worked across research and industry building scalable backend systems, data pipelines, and machine learning applications for high-volume and real-time use cases. My experience includes developing distributed systems at scale, optimizing performance with GPU acceleration and parallel processing, and deploying full-stack platforms with cloud infrastructure. I’ve also built data visualization tools and automation systems that improve efficiency, reduce latency, and enable better decision-making across engineering and applied domains."}
               </p>
               <p>
                 {"When I'm not coding, you'll find me watching F1, exploring national parks, hunting for the best food trucks, or playing volleyball."}

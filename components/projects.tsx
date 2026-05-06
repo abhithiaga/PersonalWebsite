@@ -12,7 +12,7 @@ const projects = [
     role: "In Progress",
     tags: ["React Native", "Next.js", "Supabase", "Mobile"],
     link: "#",
-    github: "#",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
@@ -20,8 +20,7 @@ const projects = [
     description: "Built a full-stack platform with FastAPI backend and Plotly/Dash frontend for real-time ECG analysis and risk prediction. Deployed on AWS Lambda, reducing model inference latency by 37% and cutting diagnostic review time by 30%.",
     role: "Full-Stack Developer",
     tags: ["FastAPI", "Plotly", "AWS Lambda", "ML"],
-    link: "#",
-    github: "#",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
@@ -29,7 +28,6 @@ const projects = [
     description: "Developed serverless Python backend and Dash frontend delivering real-time AI-driven carbon reduction insights. Enabled 15+ organizations to track and reduce carbon footprint by 20%.",
     role: "Full-Stack Developer",
     tags: ["Python", "Dash", "AWS", "LLM APIs"],
-    link: "#",
     github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
@@ -193,14 +191,16 @@ function ProjectRow({
 }) {
   return (
     <Link
-      href={project.github}
-      className={cn(
-        "group flex items-center justify-between py-4 px-4 -mx-4 rounded-lg transition-all duration-200",
-        isHovered && "bg-secondary/50"
-      )}
-      onMouseEnter={onHover}
-      onMouseLeave={onLeave}
-    >
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={cn(
+    "group flex items-center justify-between py-4 px-4 -mx-4 rounded-lg transition-all duration-200",
+    isHovered && "bg-secondary/50"
+  )}
+  onMouseEnter={onHover}
+  onMouseLeave={onLeave}
+>
       <div className="flex items-center gap-6">
         <h3 className="text-foreground font-medium group-hover:text-primary transition-colors min-w-[140px]">
           {project.title}
