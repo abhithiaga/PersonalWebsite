@@ -38,7 +38,7 @@ const projects = [
     description: "Built Python-based backend services for high-volume image/video processing with modular APIs and batch-processing tools. Increased system performance by 18% through GPU acceleration.",
     role: "Research Intern",
     tags: ["Python", "TensorFlow", "NumPy", "FastAPI"],
-    link: "#",
+    link: "UTD Lab Internship.pdf",
     github: "#",
     featured: false,
   },
