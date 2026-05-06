@@ -12,7 +12,7 @@ const projects = [
     role: "In Progress",
     tags: ["React Native", "Next.js", "Supabase", "Mobile"],
     link: "#",
-    github: "#",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
@@ -20,8 +20,7 @@ const projects = [
     description: "Built a full-stack platform with FastAPI backend and Plotly/Dash frontend for real-time ECG analysis and risk prediction. Deployed on AWS Lambda, reducing model inference latency by 37% and cutting diagnostic review time by 30%.",
     role: "Full-Stack Developer",
     tags: ["FastAPI", "Plotly", "AWS Lambda", "ML"],
-    link: "#",
-    github: "#",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
@@ -29,7 +28,6 @@ const projects = [
     description: "Developed serverless Python backend and Dash frontend delivering real-time AI-driven carbon reduction insights. Enabled 15+ organizations to track and reduce carbon footprint by 20%.",
     role: "Full-Stack Developer",
     tags: ["Python", "Dash", "AWS", "LLM APIs"],
-    link: "#",
     github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
