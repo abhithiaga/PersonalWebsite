@@ -191,16 +191,16 @@ function ProjectRow({
 }) {
   return (
     <Link
-  href={project.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className={cn(
-    "group flex items-center justify-between py-4 px-4 -mx-4 rounded-lg transition-all duration-200",
-    isHovered && "bg-secondary/50"
-  )}
-  onMouseEnter={onHover}
-  onMouseLeave={onLeave}
->
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        "group flex items-center justify-between py-4 px-4 -mx-4 rounded-lg transition-all duration-200",
+        isHovered && "bg-secondary/50"
+      )}
+      onMouseEnter={onHover}
+      onMouseLeave={onLeave}
+    >
       <div className="flex items-center gap-6">
         <h3 className="text-foreground font-medium group-hover:text-primary transition-colors min-w-[140px]">
           {project.title}
