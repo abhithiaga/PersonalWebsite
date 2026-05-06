@@ -12,15 +12,15 @@ const projects = [
     role: "In Progress",
     tags: ["React Native", "Next.js", "Supabase", "Mobile"],
     link: "#",
-    github: "https://github.com/abhithiaga/SubLeaseU",
+    github: "https://github.com/abhithiaga/CarbonAI",
     featured: true,
   },
   {
-    title: "AI Cardiovascular Diagnostics",
+    title: "AI Cardiovascular Diagnostics - CardioPulse",
     description: "Built a full-stack platform with FastAPI backend and Plotly/Dash frontend for real-time ECG analysis and risk prediction. Deployed on AWS Lambda, reducing model inference latency by 37% and cutting diagnostic review time by 30%.",
     role: "Full-Stack Developer",
     tags: ["FastAPI", "Plotly", "AWS Lambda", "ML"],
-    github: "https://github.com/abhithiaga/CarbonAI",
+    github: "https://github.com/abhithiaga/CardioPulse",
     featured: true,
   },
   {
