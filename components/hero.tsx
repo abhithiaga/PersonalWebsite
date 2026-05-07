@@ -39,7 +39,7 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
               <Button asChild>
-                <Link href="/resume.pdf" target="_blank">
+                <Link href="/Abhirami Thiagarajan Resume.pdf" target="_blank">
                   <FileText className="w-4 h-4 mr-2" />
                   Resume
                 </Link>
