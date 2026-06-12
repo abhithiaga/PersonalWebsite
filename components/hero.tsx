@@ -33,7 +33,7 @@ export function Hero() {
             </div>
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
-              Building at the intersection of <span className="text-foreground font-medium">healthcare</span> and <span className="text-foreground font-medium">technology</span>. Passionate about full-stack development, ML systems, and creating software that makes a real impact.
+              Building at the intersection of AI and complex systems. Passionate about backend infrastructure, machine learning pipelines, and creating software that solves problems that actually matter.
             </p>
 
             {/* CTA Buttons */}
