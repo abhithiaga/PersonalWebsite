@@ -28,7 +28,7 @@ export function Hero() {
                 Abhi Thiagarajan
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mt-3 font-medium">
-                Biomedical Engineering + CS
+                Computer Science
               </p>
             </div>
 
@@ -85,12 +85,12 @@ export function Hero() {
             {/* About Content */}
             <div id="about" className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                {"I'm a Biomedical Engineering student at "}
+                {"I'm a Computer Science student at "}
                 <span className="text-foreground font-medium">UT Austin</span>
-                {" with a minor in Programming and Computation, maintaining a perfect 4.0 GPA. I love building software that bridges the gap between complex technical systems and real-world impact."}
+                {" maintaining a perfect 4.0 GPA. I love building software that bridges the gap between complex technical systems and real-world impact."}
               </p>
               <p>
-                {"I’ve worked across research and industry building scalable backend systems, data pipelines, and machine learning applications for high-volume and real-time use cases. My experience includes developing distributed systems at scale, optimizing performance with GPU acceleration and parallel processing, and deploying full-stack platforms with cloud infrastructure. I’ve also built data visualization tools and automation systems that improve efficiency, reduce latency, and enable better decision-making across engineering and applied domains."}
+                {"I've worked across research and industry building scalable backend systems, data pipelines, and machine learning applications for high-volume and real-time use cases. My experience includes developing distributed systems at scale, optimizing performance with GPU acceleration and parallel processing, and deploying full-stack platforms with cloud infrastructure. More recently I've been building agentic AI systems that connect heterogeneous data sources and enable natural language access to complex operational intelligence. I've also built data visualization tools and automation systems that improve efficiency, reduce latency, and enable better decision-making across engineering and applied domains."}
               </p>
               <p>
                 {"When I'm not coding, you'll find me watching F1, exploring national parks, hunting for the best food trucks, or playing volleyball."}
