@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Abhi Thiagarajan | BME + CS @ UT Austin',
-  description: 'Biomedical Engineering student at UT Austin passionate about full-stack development, ML systems, and healthcare technology.',
+  title: 'Abhi Thiagarajan | Computer Science @ UT Austin',
+  description: 'Computer Science student at UT Austin passionate about full-stack development, ML systems, and agentic technology.',
   generator: 'v0.app',
   icons: {
     icon: [
