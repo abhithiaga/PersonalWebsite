@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills | Abhi Thiagarajan</title>
+<link rel="stylesheet" href="mc-style.css">
+</head>
+<body class="page-overlay">
+<div class="mc-bg">
+  <div class="sun"></div>
+  <div class="cloud" style="width:120px;height:26px;top:14%;left:60%;"></div>
+  <div class="cloud" style="width:80px;height:20px;top:22%;left:78%;"></div>
+  <div class="cloud" style="width:100px;height:22px;top:10%;left:35%;"></div>
+  <div class="hill-back"></div>
+  <div class="tree" style="left:6%;"></div>
+  <div class="tree" style="left:15%; bottom:16%; transform:scale(.8);"></div>
+  <div class="tree" style="left:82%;"></div>
+  <div class="tree" style="left:91%; bottom:15%; transform:scale(.7);"></div>
+  <div class="hill-front"></div>
+</div>
+<div class="mc-overlay"></div>
+<div class="page-wrap">
+  <a class="mc-btn small page-back-top" href="index.html"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:8px;"><path d="M15 19l-7-7 7-7 1.4 1.4L10.8 12l5.6 5.6z"/></svg>Back</a>
+  <div class="page-header">
+    <div class="page-title">Skills</div>
+  </div>
+  <div class="page-rule"></div>
+  <div class="page-panel" style="padding:20px;">
+    <div class="skills-grid">
+      <div class="skills-enchant-panel">
+        <div class="skills-enchant-title">Enchant</div>
+        <div class="skills-book">📖</div>
+        <div class="skills-enchant-hint">Pick a category to view its skills.</div>
+      </div>
+      <div>
+        <div class="skill-cat-row active" data-cat="languages">
+      <div class="skill-cat-icon">⚔️</div>
+      <div>
+        <div class="skill-cat-name">Languages</div>
+        <div class="skill-cat-count">7 skills</div>
+      </div>
+      <div class="skill-cat-badge">1</div>
+    </div>
+    <div class="skill-cat-row" data-cat="mldata">
+      <div class="skill-cat-icon">⛏️</div>
+      <div>
+        <div class="skill-cat-name">ML & Data</div>
+        <div class="skill-cat-count">6 skills</div>
+      </div>
+      <div class="skill-cat-badge">2</div>
+    </div>
+    <div class="skill-cat-row" data-cat="backend">
+      <div class="skill-cat-icon">🪄</div>
+      <div>
+        <div class="skill-cat-name">Backend & APIs</div>
+        <div class="skill-cat-count">5 skills</div>
+      </div>
+      <div class="skill-cat-badge">3</div>
+    </div>
+    <div class="skill-cat-row" data-cat="cloud">
+      <div class="skill-cat-icon">🪓</div>
+      <div>
+        <div class="skill-cat-name">Cloud & Tools</div>
+        <div class="skill-cat-count">6 skills</div>
+      </div>
+      <div class="skill-cat-badge">4</div>
+    </div>
+    <div class="skill-cat-row" data-cat="certs">
+      <div class="skill-cat-icon">🛡️</div>
+      <div>
+        <div class="skill-cat-name">Certifications</div>
+        <div class="skill-cat-count">3 skills</div>
+      </div>
+      <div class="skill-cat-badge">5</div>
+    </div>
+        <div class="skill-detail" id="skillDetail">
+          <div class="skill-detail-head"><span id="skillDetailTitle">Languages</span><span id="skillDetailCount">7 applied</span></div>
+          <div class="skill-chip-grid" id="skillChips"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const catData = {"languages": {"name": "Languages", "items": [["\ud83d\udc0d", "Python"], ["\u2615", "Java"], ["\ud83d\uddc4\ufe0f", "SQL"], ["\u2795", "C++"], ["\ud83d\udfe8", "JavaScript"], ["\ud83c\udf10", "HTML/CSS"], ["\ud83d\udd34", "Wolfram"]]}, "mldata": {"name": "ML & Data", "items": [["\ud83e\udde0", "TensorFlow"], ["\ud83d\udcc8", "Scikit-learn"], ["\ud83d\udd22", "NumPy"], ["\ud83d\udc3c", "Pandas"], ["\ud83d\udcca", "Plotly"], ["\ud83d\udcc9", "Dash"]]}, "backend": {"name": "Backend & APIs", "items": [["\u26a1", "FastAPI"], ["\ud83c\udf76", "Flask"], ["\ud83d\udd17", "REST APIs"], ["\ud83d\udd04", "ETL Pipelines"], ["\ud83d\udccb", "Power BI"]]}, "cloud": {"name": "Cloud & Tools", "items": [["\u2601\ufe0f", "AWS"], ["\ud83d\udd37", "Azure"], ["\ud83c\udf3f", "Git"], ["\ud83d\udc33", "Docker"], ["\ud83d\udc27", "Linux"], ["\ud83d\udd34", "Wolfram Cloud"]]}, "certs": {"name": "Certifications", "items": [["\u2601\ufe0f", "AWS Cloud Practitioner"], ["\ud83d\udd37", "Azure Fundamentals"], ["\ud83d\udccb", "Power BI"]]}};
+    const rows = document.querySelectorAll('.skill-cat-row');
+    function renderCat(key){
+      const data = catData[key];
+      document.getElementById('skillDetailTitle').textContent = data.name;
+      document.getElementById('skillDetailCount').textContent = data.items.length + ' applied';
+      document.getElementById('skillChips').innerHTML = data.items.map(it =>
+        `<div class="skill-chip"><span class="ic">${it[0]}</span>${it[1]}</div>`
+      ).join('');
+    }
+    rows.forEach(r => r.addEventListener('click', ()=>{
+      rows.forEach(x=>x.classList.remove('active'));
+      r.classList.add('active');
+      renderCat(r.dataset.cat);
+    }));
+    renderCat('languages');
+  </script>
+  <a class="mc-btn page-back-bottom" href="index.html"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:8px;"><path d="M15 19l-7-7 7-7 1.4 1.4L10.8 12l5.6 5.6z"/></svg>Back</a>
+</div>
+
+</body>
+</html>

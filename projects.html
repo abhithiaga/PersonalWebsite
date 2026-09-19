@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Abhi Thiagarajan</title>
+<link rel="stylesheet" href="mc-style.css">
+</head>
+<body class="page-overlay">
+<div class="mc-bg">
+  <div class="sun"></div>
+  <div class="cloud" style="width:120px;height:26px;top:14%;left:60%;"></div>
+  <div class="cloud" style="width:80px;height:20px;top:22%;left:78%;"></div>
+  <div class="cloud" style="width:100px;height:22px;top:10%;left:35%;"></div>
+  <div class="hill-back"></div>
+  <div class="tree" style="left:6%;"></div>
+  <div class="tree" style="left:15%; bottom:16%; transform:scale(.8);"></div>
+  <div class="tree" style="left:82%;"></div>
+  <div class="tree" style="left:91%; bottom:15%; transform:scale(.7);"></div>
+  <div class="hill-front"></div>
+</div>
+<div class="mc-overlay"></div>
+<div class="page-wrap">
+  <a class="mc-btn small page-back-top" href="index.html"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:8px;"><path d="M15 19l-7-7 7-7 1.4 1.4L10.8 12l5.6 5.6z"/></svg>Back</a>
+  <div class="page-header">
+    <div class="page-title">Select Project</div>
+  </div>
+  <div class="page-rule"></div>
+  <div class="page-panel" style="padding:16px;">
+    <input class="proj-search" id="projSearch" type="text" placeholder="Search projects...">
+  </div>
+  <div class="page-panel" id="projList">
+    <a class="proj-row" href="https://github.com/abhithiaga/CardioPulse" target="_blank" style="display:grid;">
+      <div class="proj-icon">❤</div>
+      <div>
+        <div class="proj-name-row"><span class="proj-name">CardioPulse</span><span class="proj-year">2026</span></div>
+        <div class="proj-desc">Full-stack platform with FastAPI backend and Plotly/Dash frontend for real-time ECG analysis and risk prediction. Deployed on AWS Lambda, cutting inference latency by 37%.</div>
+        <div class="proj-tags"><span class="proj-tag">FastAPI</span><span class="proj-tag">Plotly</span><span class="proj-tag">AWS Lambda</span><span class="proj-tag">ML</span></div>
+      </div>
+      <div class="proj-status">
+        <span class="proj-bars"><span></span><span></span><span></span></span>
+        <span class="proj-status-text ">Released</span>
+      </div>
+    </a>
+    <a class="proj-row" href="https://github.com/abhithiaga/CarbonAI" target="_blank" style="display:grid;">
+      <div class="proj-icon">🌿</div>
+      <div>
+        <div class="proj-name-row"><span class="proj-name">CarbonAI Platform</span><span class="proj-year">2026</span></div>
+        <div class="proj-desc">Serverless Python backend and Dash frontend delivering real-time AI-driven carbon reduction insights for 15+ organizations.</div>
+        <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Dash</span><span class="proj-tag">AWS</span><span class="proj-tag">LLM APIs</span></div>
+      </div>
+      <div class="proj-status">
+        <span class="proj-bars"><span></span><span></span><span></span></span>
+        <span class="proj-status-text ">Deployed</span>
+      </div>
+    </a>
+    <a class="proj-row" href="https://github.com/abhithiaga/SubLeaseU" target="_blank" style="display:grid;">
+      <div class="proj-icon">🏠</div>
+      <div>
+        <div class="proj-name-row"><span class="proj-name">UT Sublease</span><span class="proj-year">2026</span></div>
+        <div class="proj-desc">Mobile-first subleasing platform for UT Austin students, with verified profiles, in-app messaging, and neighborhood search.</div>
+        <div class="proj-tags"><span class="proj-tag">React Native</span><span class="proj-tag">Next.js</span><span class="proj-tag">Supabase</span><span class="proj-tag">Mobile</span></div>
+      </div>
+      <div class="proj-status">
+        <span class="proj-bars"><span></span><span></span><span></span></span>
+        <span class="proj-status-text progress">In Progress</span>
+      </div>
+    </a>
+  </div>
+  <div class="proj-footer-note" id="projCount">3 projects · select a project for actions</div>
+  <script>
+    const rows = Array.from(document.querySelectorAll('.proj-row'));
+    document.getElementById('projSearch').addEventListener('input', (e)=>{
+      const q = e.target.value.toLowerCase();
+      let visible = 0;
+      rows.forEach(r=>{
+        const match = r.innerText.toLowerCase().includes(q);
+        r.style.display = match ? '' : 'none';
+        if(match) visible++;
+      });
+      document.getElementById('projCount').textContent = visible + ' project' + (visible===1?'':'s') + ' · select a project for actions';
+    });
+  </script>
+  <a class="mc-btn page-back-bottom" href="index.html"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;margin-right:8px;"><path d="M15 19l-7-7 7-7 1.4 1.4L10.8 12l5.6 5.6z"/></svg>Back</a>
+</div>
+
+</body>
+</html>
