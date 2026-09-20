@@ -1,32 +1,30 @@
-# Abhi Thiagarajan — Portfolio (Minecraft main-menu style)
+# hey, it's abhi's portfolio 👋
 
-A static, no-build-step site styled like a Minecraft main menu — chunky pixel buttons, blocky title, "Enchant" skills page, and a project-select screen.
+This is my personal site! It's built as a bunch of plain HTML/CSS pages — no framework, no build step, just open a file and it works.
 
-## Files
-- `index.html` — Home / main menu (Experience, Projects, About Me, Skills, GitHub, LinkedIn, Resume)
-- `experience.html` — Experience timeline
-- `projects.html` — Select Project screen (with live search)
-- `about.html` — About Me (your photo, stats, "Right now" panel)
-- `skills.html` — Skills as an "Enchant" grimoire (click a category to see its skills)
-- `mc-style.css` — shared styles for every page
-- `images/profile.jpg` — your headshot
+## what's in here
 
-## Put this in your GitHub repo
-1. Delete the current contents of your repo (the old Next.js/v0 project — not needed anymore).
-2. Copy all the files above (keeping the `images/` folder) into the root of the repo.
-3. Commit and push:
-   ```
-   git add .
-   git commit -m "Redesign: Minecraft-menu-style multi-page portfolio"
-   git push
-   ```
-4. Vercel auto-redeploys and abhithiaga.com updates — no extra config needed.
+- `index.html` — the home page / main menu
+- `about.html` — a little about me, my photo, what I'm up to lately
+- `experience.html` — where I've worked
+- `projects.html` — stuff I've built
+- `skills.html` — languages, tools, frameworks I use
+- `mc-style.css` — all the styling, shared across every page
+- `images/` — my headshot and any other images
+- `Abhirami-Thiagarajan-Resume.pdf` — my resume
 
-## To add your resume
-Drop your resume PDF into the repo root and either rename it to `Abhirami-Thiagarajan-Resume.pdf`, or open `index.html` and change that filename in the "Resume" button link to match your actual file.
+## running it locally
 
-## Editing content
-- **Experience**: edit the `exp_entry(...)` calls inside your build, or just edit the HTML directly in `experience.html` — each entry is a `.exp-entry` block with date, role, bullets, and tags.
-- **Projects**: same idea in `projects.html` — each is a `.proj-row` link block.
-- **About "Right now" panel**: these are placeholder fun facts based on what you mentioned (F1, national parks, food trucks, volleyball) — edit the `.about-now-row` blocks in `about.html` to whatever's actually true for you day to day.
-- **Skills**: category data lives in a small JS object at the bottom of `skills.html` — edit the emoji/skill list there to add or remove skills.
+Honestly, just double-click `index.html` and it'll open in your browser. No install, no `npm anything`.
+
+## editing stuff
+
+Everything's plain HTML so it's pretty easy to poke around:
+- Want to add a project? Copy one of the existing project blocks in `projects.html` and change the text/links.
+- Want to update a job? Same deal in `experience.html`.
+- Skills live in a little JS object near the bottom of `skills.html` — add or remove entries there.
+- The "right now" section on the about page is just whatever I'm currently into — update it whenever something changes.
+
+## deployed at
+
+abhithiaga.com, hosted on Vercel, auto-deploys whenever I push to `main`.
