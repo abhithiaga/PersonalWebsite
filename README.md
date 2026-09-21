@@ -11,7 +11,7 @@ This is my personal site! It's built as a bunch of plain HTML/CSS pages — no f
 - `skills.html` — languages, tools, frameworks I use
 - `mc-style.css` — all the styling, shared across every page
 - `images/` — my headshot and any other images
-- `Abhirami-Thiagarajan-Resume.pdf` — my resume
+- `Abhirami_Thiagarajan_Resume.pdf` — my resume
 
 ## running it locally
 
